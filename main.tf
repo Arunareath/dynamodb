@@ -24,7 +24,7 @@ resource "aws_instance" "name" {
     instance_type = var.instace-type
 
     tags = {
-      name = " web-instance-${cout.index}"
+      name = " web-instance-${count.index}"
     }
   
 }
