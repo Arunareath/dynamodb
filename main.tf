@@ -18,7 +18,7 @@ provider "aws" {
 }
 
 
-resource "aws_instance" "name" {
+resource "aws_instance" "web" {
     count = var.instance-count
     ami = var.ami-type
     instance_type = var.instace-type
